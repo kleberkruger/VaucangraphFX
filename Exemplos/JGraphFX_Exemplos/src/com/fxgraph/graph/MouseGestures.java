@@ -20,7 +20,7 @@ public class MouseGestures {
         node.setOnMouseReleased(onMouseReleasedEventHandler);
     }
 
-    private EventHandler<MouseEvent> onMousePressedEventHandler = new EventHandler<>() {
+    private EventHandler<MouseEvent> onMousePressedEventHandler = new EventHandler<MouseEvent>() {
 
         @Override
         public void handle(MouseEvent event) {
@@ -33,7 +33,7 @@ public class MouseGestures {
         }
     };
 
-    private EventHandler<MouseEvent> onMouseDraggedEventHandler = new EventHandler<>() {
+    private EventHandler<MouseEvent> onMouseDraggedEventHandler = new EventHandler<MouseEvent>() {
 
         @Override
         public void handle(MouseEvent event) {
